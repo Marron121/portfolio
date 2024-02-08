@@ -1,0 +1,33 @@
+@import './base.css';
+#app {
+  display: grid;
+  padding: 0 2rem;
+  width: 95%;
+  padding-top: 1%;
+}
+h1
+{
+  color: #CAF0F8;
+}
+h2
+{
+  color: #0096C7;
+  font-style: italic;
+}
+
+h3
+{
+  color: #0096C7;
+  font-style: oblique;
+}
+p, ul
+{
+  color: #CAF0F8;
+}
+button
+{
+  border-width: 0px;
+}
+.bold{
+  font-weight: bold;
+}

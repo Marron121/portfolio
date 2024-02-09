@@ -48,7 +48,7 @@ export default{
                 title: "Portfolio",
                 description: "This entire portfolio you're currently viewing was created completely by me using <i>Vue 3</i>.",
                 images: [p_1],
-                buttonData: [{name: 'Check the source code', icon: GithubIcon, url: 'https://github.com/Marron121/DialogueMaker'}]
+                buttonData: [{name: 'Check the source code', icon: GithubIcon, url: 'https://github.com/Marron121/portfolio'}]
             }
             ]
         }

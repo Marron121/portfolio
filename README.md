@@ -14,5 +14,5 @@ The main branch contains the code of the project. The Vue components and assets 
 
 The *dist* folder contains the build of the page.
 
-### **gh-pages** folder
-This page contains the content inside *dist*, and is where the page is loaded from.
+### **gh-pages** branch
+This branch contains the content inside *dist* and is where the page is loaded from.

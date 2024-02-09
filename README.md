@@ -1,29 +1,18 @@
-# portfolio
+# Aaron's portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+This public repository contains the code and setup for my personal portfolio.
 
-## Recommended IDE Setup
+You can check it at <https://marron121.github.io/portfolio/>.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Tools used
+This was created using *[Vue 3](https://vuejs.org/)*, and being published using *[Github Pages](https://pages.github.com/)*.
 
 ## Project Setup
+The project is set up with the following structure:
+### **main** branch
+The main branch contains the code of the project. The Vue components and assets are located inside the *src* folder.
 
-```sh
-npm install
-```
+The *dist* folder contains the build of the page.
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+### **gh-pages** folder
+This page contains the content inside *dist*, and is where the page is loaded from.

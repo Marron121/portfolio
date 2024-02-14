@@ -37,6 +37,7 @@
             <Transition name="fade">
                 <div v-if="creditsClass=='about-creditsVisible'" v-bind:class="creditsClass">
                     <ul>
+                        <li><a href="https://www.instagram.com/lauraqwerty_/" target="_blank"><span class="bold">Favicon</span> by Laura Qwerty (icon for Aurum Lingua Games)</a></li>
                         <li><a href="https://thenounproject.com/icon/person-6357431/" target="_blank"><span class="bold">Person</span> by Kiki Rizky (The Noun Project)</a></li>
                         <li><a href="https://thenounproject.com/icon/development-6356314/" target="_blank"><span class="bold">Development</span> by HAZHA (The Noun Project)</a></li>
                         <li><a href="https://thenounproject.com/icon/email-6529498/" target="_blank"><span class="bold">Email</span> by Rudi Yugana (The Noun Project)</a></li>
@@ -158,6 +159,7 @@ export default {
     transition: 0.5s ease-in;
     color: black;
     font-weight: bold;
+    cursor: pointer;
 }
 .about-creditsButtonVisible{
     background-color: #023E8A;

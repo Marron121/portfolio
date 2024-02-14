@@ -156,6 +156,7 @@ video {
     color: black;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
     transition: all 0.5s;
 }
 .tasksInactive-button{

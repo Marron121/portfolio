@@ -48,6 +48,7 @@ export default{
     min-height: max-content;
     min-width: fit-content;
     width: fit-content;
+    cursor: pointer;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 5px;

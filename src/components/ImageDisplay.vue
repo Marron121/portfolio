@@ -103,6 +103,7 @@ export default{
     color: black;
     font-weight: bold;
     background-color: #0096C7;
+    cursor: pointer;
     transition: 0.5s;
 }
 .prevButton, .nextButton{
@@ -113,6 +114,7 @@ export default{
     color: black;
     font-weight: bold;
     background-color: #0096C7;
+    cursor: pointer;
     transition: 0.5s;
 }
 .automaticButton:hover, .nextButton:hover, .prevButton:hover{

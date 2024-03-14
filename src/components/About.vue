@@ -114,18 +114,18 @@ export default {
     margin-top: 1%;
     margin-bottom: 1%;
     border-style: solid;
-    border-color: #023E8A;
+    border-color: var(--color-textblock-border);
     transition: all 0.5s;
 }
 .about-imageWithText:hover{
-    box-shadow: 0 0 10px 5px #023E8A;
+    box-shadow: 0 0 10px 5px var(--color-textblock-border);
 }
 .about-bulletPointsInvisible{
     color: transparent;
     transition: 0.5s;
 }
 .about-bulletPointsVisible{
-    color: #CAF0F8;
+    color: var(--color-text);
     transition: 0.5s;
 }
 .about-myImage{
@@ -137,7 +137,7 @@ export default {
     transition: 0.5s ease;
 }
 .about-myImage:hover{
-    background-color: #023E8A;
+    background-color: var(--color-textblock-border);
 }
 .about-buttons{
     width: auto;
@@ -156,31 +156,31 @@ export default {
     margin-top: 2%;
     width: fit-content;
     height: fit-content;
-    transition: 0.5s ease-in;
-    color: black;
-    font-weight: bold;
     cursor: pointer;
+    transition: 0.5s ease-in;
+    color: var(--color-buttonview-text);
+    font-weight: bold;
 }
 .about-creditsButtonVisible{
-    background-color: #023E8A;
+    background-color: var(--color-activated-credits);
 }
 .about-creditsButtonVisible:hover{
-    box-shadow: 0 0 10px 0px #023E8A;
+    box-shadow: 0 0 10px 0px var(--color-activated-credits);
 }
 .about-creditsButtonInvisible{
-    background-color: #0096C7;
+    background-color: var(--color-button-inactive);
 }
 .about-creditsButtonInvisible:hover{
-    box-shadow: 0 0 10px 5px #0096C7;
+    box-shadow: 0 0 10px 5px var(--color-button-inactive);
 }
 .about-creditsVisible{
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: #023E8A;
-    box-shadow: 0 0 10px 0px #023E8A;
+    background-color: var(--color-activated-credits);
+    box-shadow: 0 0 10px 0px var(--color-activated-credits);
 }
 a, a:visited{
-    color: #CAF0F8;
+    color: var(--color-textblock-description);
 }
 .fade-enter-active, .fade-leave-active{
   transition: all 0.5s ease;

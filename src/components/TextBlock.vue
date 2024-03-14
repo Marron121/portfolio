@@ -97,7 +97,7 @@ h3{
 }
 .textBlock-description{
     text-align: center;
-    color: #CAF0F8;
+    color: var(--color-textblock-description);
 }
 .textBlock-area{
     width: 100%;
@@ -105,12 +105,12 @@ h3{
     padding: 1%;
     margin-top: 1%;
     border-style: solid;
-    border-color: #023E8A;
+    border-color: var(--color-textblock-border);
     transition: all 0.5s;
 }
 .textBlock-area:hover{
     border-radius: 2%;
-    box-shadow: 0 0 10px 5px #023E8A;
+    box-shadow: 0 0 10px 5px var(--color-textblock-border-hover);
 }
 .textBlock-visuals{
     display: inline-flex;
@@ -127,7 +127,7 @@ h3{
     border-style: solid;
     border-width: 0px 0px 10px 0px;
     border-radius: 20px;
-    border-color: #023E8A;
+    border-color: var(--color-textblock-visuals-border);
 }
 .imageDisplay{
     width: 45% !important;
@@ -153,7 +153,7 @@ video {
     margin-bottom: 1%;
     padding: 2%;
     border-radius: 5px;
-    color: black;
+    color: var(--color-buttonview-text);
     text-align: center;
     font-weight: bold;
     cursor: pointer;
@@ -161,14 +161,14 @@ video {
 }
 .tasksInactive-button{
     width: fit-content;
-    background-color: #0096C7;
-    border-color: #0096C7;
+    background-color: var(--color-button-inactive);
+    border-color: var(--color-button-inactive);
     transition: all 0.5s;
 }
 .tasksActive-button{
     width: 70%;
-    background-color: #023E8A;
-    border-color: #023E8A;
+    background-color: var(--color-button-active);
+    border-color: var(--color-button-active);
     transition: all 0.5s;
 }
 .tasksActive-list{
@@ -181,19 +181,19 @@ video {
     padding-top: 2%;
     padding-bottom: 2%;
     border-radius: 5px;
-    background-color: #023E8A;
-    border-color: #023E8A;
+    background-color: var(--color-activated);
+    border-color: var(--color-activated);
     transition: 0.5s;
 }
 .tasksInactive-button:hover{
-    background-color: #0077B6;
-    border-color: #0077B6;
-    box-shadow: 0 0 20px 0px #0077B6;
+    background-color: var(--color-button-inactive);
+    border-color:  var(--color-button-inactive);
+    box-shadow: 0 0 20px 0px  var(--color-button-inactive);
 }
 .tasksActive-button:hover{
-    background-color: #023E8A;
-    border-color: #023E8A;
-    box-shadow: 0 0 20px 0px #023E8A;
+    background-color: var(--color-button-active);
+    border-color: var(--color-button-active);
+    box-shadow: 0 0 20px 0px var(--color-button-active);
 }
 
 .fade-enter-active, .fade-leave-active{

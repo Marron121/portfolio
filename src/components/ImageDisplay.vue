@@ -48,7 +48,6 @@ export default{
             else if (this.currentImage <= -1){
                 this.currentImage = this.images.length-1;
             }
-            //console.log("Update Image : " + this.currentImage);
         },
         slideshowStatusChanged(){
             if(this.currentState == 0){
@@ -100,9 +99,9 @@ export default{
     width: fit-content;
     height: fit-content;
     border-radius: 5px;
-    color: black;
+    color: var(--color-black);
     font-weight: bold;
-    background-color: #0096C7;
+    background-color: var(--color-blue-dark-4);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -111,14 +110,14 @@ export default{
     height: fit-content;
     padding: 5px;
     border-radius: 5px;
-    color: black;
+    color: var(--color-slideshow-text);
     font-weight: bold;
-    background-color: #0096C7;
+    background-color: var(--color-slideshow);
     cursor: pointer;
     transition: 0.5s;
 }
 .automaticButton:hover, .nextButton:hover, .prevButton:hover{
-    background-color: #0077B6;
-    box-shadow: 0 0 20px 0px #0077B6;
+    background-color: var(--color-slideshow-hover);
+    box-shadow: 0 0 20px 0px var(--color-slideshow-hover);
 }
 </style>

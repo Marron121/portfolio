@@ -2,7 +2,8 @@
     <div class="Footer">
         <div class="Footer-separator"></div>
         <div class="Footer-grid">
-            <p>Contact: <a href="mailto:aaronmigo2.0@gmail.com">aaronmigo2.0@gmail.com</a></p>
+            <p><span class="bold">Contact:</span> <a href="mailto:aaronmigo2.0@gmail.com">aaronmigo2.0@gmail.com</a></p>
+            <div class="Footer-ThemeButton" v-on:click="ChangeTheme()">{{themeMessage}}</div>
             <div class="Footer-socialmedia">
                 <a href="https://www.linkedin.com/in/aaron-miranda-g%C3%B3mez-886310251/" target="_blank"><img v-bind:src="images[0]" alt="Linkedin"></a>
                 <a href="https://github.com/Marron121" target="_blank"><img v-bind:src="images[1]" alt="Github"></a>
@@ -21,7 +22,31 @@ import LinkedinIcon from '@/assets/icons/linkedin.svg';
 export default{
     data(){
         return{
-            images: [LinkedinIcon, GithubIcon, ItchioIcon, MastodonIcon]
+            images: [LinkedinIcon, GithubIcon, ItchioIcon, MastodonIcon],
+            currentColorScheme: "",
+            themeMessage: "Change to /theme/ mode /icon/"
+        }
+
+    },
+    created(){
+            this.currentColorScheme = getComputedStyle(document.documentElement).getPropertyValue('--color-scheme-os');
+            this.setTheme();
+        },
+    methods: {
+        ChangeTheme(){
+            this.currentColorScheme = this.currentColorScheme == 'dark'? 'light' : 'dark';
+            this.setTheme();
+        },
+        setTheme(){
+            if (this.currentColorScheme == 'dark')
+            {
+                this.themeMessage = "Change to light mode 🌞";
+            }
+            else
+            {
+                this.themeMessage = "Change to dark mode 🌙";
+            }
+            document.documentElement.className = this.currentColorScheme;
         }
     }
 }
@@ -35,7 +60,7 @@ export default{
     left: 0;
     bottom: 0;
     padding-bottom: 1%;
-    background-color: #023E8A;
+    background-color: var(--color-footer);
 }
 .Footer-grid{
     display: grid;
@@ -44,6 +69,22 @@ export default{
     justify-items: left;
     width: 100%;
     padding: 0.5%;
+}
+.Footer-ThemeButton{
+    position: absolute;
+    right: 10%;
+    width: fit-content;
+    height: fit-content;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    padding: 1%;
+    border-style: solid;
+    border-color: var(--color-background);
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+.Footer-ThemeButton:hover{
+    box-shadow: 0 0 15px 0px var(--color-background);
 }
 .Footer-socialmedia{
     display: grid;
@@ -56,7 +97,7 @@ export default{
     max-width: 100%;
     min-height: 5px;
     height: 5px;
-    background-color: #CAF0F8;
+    background-color: var(--color-footer-separator);
 }
 img{
     width: 32px;

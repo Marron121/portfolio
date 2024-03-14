@@ -43,8 +43,7 @@ export default{
     padding: auto;
     grid-template-columns: 100px 1fr;
     align-items: center;
-    background-color: #0096C7;
-    border-color: #0096C7;
+    background-color: var(--color-buttonview);
     min-height: max-content;
     min-width: fit-content;
     width: fit-content;
@@ -55,9 +54,8 @@ export default{
     transition: 0.5s;
 }
 .insideButton:hover{
-    background-color: #0077B6;
-    border-color: #0077B6;
-    box-shadow: 0 0 20px 0px #0077B6;
+    background-color: var(--color-buttonview-hover);
+    box-shadow: 0 0 20px 0px var(--color-buttonview-hover);
 }
 .insideButton-icon{
     min-width: 50px;
@@ -68,7 +66,7 @@ export default{
     padding-right: 10px;
 }
 .insideButton-text{
-    color: black;
+    color: var(--color-buttonview-text);
     font-weight: bolder;
 }
 </style>

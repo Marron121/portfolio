@@ -81,6 +81,8 @@ export default{
     border-style: solid;
     border-color: var(--color-background);
     border-radius: 10%;
+    user-select: none;
+    cursor: pointer;
     transition: all 0.5s;
 }
 .Footer-ThemeButton:hover{

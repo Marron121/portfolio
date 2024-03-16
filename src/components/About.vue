@@ -156,6 +156,7 @@ export default {
     margin-top: 2%;
     width: fit-content;
     height: fit-content;
+    user-select: none;
     cursor: pointer;
     transition: 0.5s ease-in;
     color: var(--color-buttonview-text);
@@ -180,7 +181,7 @@ export default {
     box-shadow: 0 0 10px 0px var(--color-activated-credits);
 }
 a, a:visited{
-    color: var(--color-textblock-description);
+    color: var(--color-white);
 }
 .fade-enter-active, .fade-leave-active{
   transition: all 0.5s ease;

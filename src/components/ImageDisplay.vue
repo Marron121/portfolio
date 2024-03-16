@@ -103,6 +103,7 @@ export default{
     font-weight: bold;
     background-color: var(--color-blue-dark-4);
     cursor: pointer;
+    user-select: none;
     transition: 0.5s;
 }
 .prevButton, .nextButton{
@@ -113,6 +114,7 @@ export default{
     color: var(--color-slideshow-text);
     font-weight: bold;
     background-color: var(--color-slideshow);
+    user-select: none;
     cursor: pointer;
     transition: 0.5s;
 }

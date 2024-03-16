@@ -156,6 +156,7 @@ video {
     color: var(--color-buttonview-text);
     text-align: center;
     font-weight: bold;
+    user-select: none;
     cursor: pointer;
     transition: all 0.5s;
 }
